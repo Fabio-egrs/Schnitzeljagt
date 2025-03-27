@@ -63,3 +63,23 @@
     </script>
 </body>
 </html>
+<script>
+    // Liste der Hinweise
+    const hints = [
+        "Erster Hinweis: wie viel kostet der eintrit für einen erwachsenden bei "der tunnel bauer".",
+        "Zweiter Hinweis: wortsalat chemie raum.",
+        "Dritter Hinweis: Finde den roten Briefkasten in der Nähe.",
+        "Glückwunsch! Du hast den Schatz gefunden!"
+    ];
+    let currentHint = 0;
+
+    // Funktion zum Anzeigen des nächsten Hinweises
+    function nextHint() {
+        if (currentHint < hints.length) {
+            document.getElementById("hint-text").textContent = hints[currentHint];
+            currentHint++;
+        } else {
+            alert("Die Schnitzeljagd ist vorbei!");
+        }
+    }
+</script>
